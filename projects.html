@@ -1,0 +1,225 @@
+
+  <div class="project-cards">
+    <!-- HTML for container element -->
+<div class="project-cards">
+  <!-- set the data for the first project -->
+  <div class="project-card">
+    <h3 class="project-title">Geet Music</h3>
+    <p class="project-description">An amazing app cum webplayer to play unlimited songs free of cost without any ads and need to login.</p>
+    <a class="project-link" href="https://geet.gq" target="_blank">Visit</a>
+  </div>
+
+  <!-- set the data for the second project -->
+  <div class="project-card">
+    <h3 class="project-title">Weather-Web</h3>
+    <p class="project-description">An simple Webpage to get weather info of any point on the planet.</p>
+    <a class="project-link" href="https://weather-web.tk" target="_blank">Visit</a>
+  </div>
+
+  <!-- set the data for the third project -->
+  <div class="project-card">
+    <h3 class="project-title">Musicalsmth</h3>
+    <p class="project-description">A simple yet beautiful personal collection of music.</p>
+    <a class="project-link" href="https://musicalsmth.ga" target="_blank">Visit</a>
+  </div>
+
+  <!-- set the data for the fourth project -->
+  <!-- set the data for the fourth project -->
+<div class="project-card">
+  <h3 class="project-title">Locker-Room</h3>
+  <p class="project-description">A private group chat room</p>
+  <a class="project-link" href="https://locker-room.jatinsharma24.repl.co" target="_blank">Visit</a>
+</div>
+
+<!-- set the data for the fifth project -->
+<div class="project-card">
+  <h3 class="project-title">IndianGPT</h3>
+  <p class="project-description">An AI Chatbot that will answer all of your questions.</p>
+  <a class="project-link" href="https://indiangpt.jatinsharma24.repl.co" target="_blank">Visit</a>
+</div>
+
+<!-- set the data for the sixth project -->
+<div class="project-card">
+  <h3 class="project-title">Ai-images</h3>
+  <p class="project-description">A website to generate images with the help of ai</p>
+  <a class="project-link" href="https://aiimages.tk" target="_blank">Visit</a>
+</div>
+
+<!-- set the data for the seventh project -->
+<div class="project-card">
+  <h3 class="project-title">TimeCapsule</h3>
+  <p class="project-description">A place where you can store you memories and revisite them whenever you wish</p>
+  <a class="project-link" href="https://timecapsule.jatinsharma24.repl.co" target="_blank">Visit</a>
+</div>
+<!-- set the data for the seventh project -->
+<div class="project-card">
+  <h3 class="project-title">TimeCapsule</h3>
+  <p class="project-description">A place where you can store you memories and revisite them whenever you wish</p>
+  <a class="project-link" href="https://timecapsule.jatinsharma24.repl.co" target="_blank">Visit</a>
+</div>
+
+<!-- set the data for the eighth project -->
+<div class="project-card">
+  <h3 class="project-title">Diwali-Diya</h3>
+  <p class="project-description">A Replit Diwali Jam winner project.</p>
+  <a class="project-link" href="https://diwali.ml" target="_blank">Visit</a>
+</div>
+
+<!-- set the data for the ninth project -->
+<div class="project-card">
+  <h3 class="project-title">Yeti</h3>
+  <p class="project-description">A Replit Halloween Jam winner.</p>
+  <a class="project-link" href="https://yeti.jatinsharma24.repl.co" target="_blank">Visit</a>
+</div>
+
+<!-- close the container element -->
+  </div>
+
+<!-- Template for project cards -->
+<template id="project-card-template">
+  <div class="project-card">
+ 
+    <!-- Project title -->
+    <h3 class="project-title"></h3>
+    <!-- Project description -->
+    <p class="project-description"></p>
+    <!-- Project link -->
+    <a class="project-link" href="#" target="_blank">View project</a>
+  </div>
+</template>
+</div>
+<style>
+  .project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 12vw;
+  width: 70vw;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Project card hover effect */
+.project-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Project title */
+.project-title {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Project title hover effect */
+.project-title:hover {
+  color: #ffb3b3;
+}
+
+/* Project description */
+.project-description {
+  color: #666666;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Project link */
+.project-link {
+  background-color: #ffb3b3;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Project link hover effect */
+.project-link:hover {
+  background-color: #ff6666;
+}
+</style>
+<script>
+           const projectCardsContainer = document.querySelector('.project-cards');
+const projectCardTemplate = document.querySelector('#project-card-template');
+const projects = [
+  {
+    
+    title: 'Geet Music',
+    description: 'An amazing app cum webplayer to play unlimited songs free of cost without any ads and need to login.',
+    link: 'https://geet.gq'
+  },
+  {
+    
+    title: 'Weather-Web',
+    description: 'An simple Webpage to get weather info of any point on the planet.',
+    link: 'https://weather-web.tk'
+  },
+  {
+    title: 'Musicalsmth',
+    description: 'A simple yet beautiful personal collection of music.',
+    link: 'https://musicalsmth.ga'
+  },//gg
+  {
+    title: 'Locker-Room',
+    description: 'A private group chat room',
+    link: 'https://locker-room.jatinsharma24.repl.co'
+  },
+  {
+    title: 'IndianGPT',
+    description: 'An AI Chatbot that will answer all of your questions.',
+    link: 'https://indiangpt.jatinsharma24.repl.co'
+  },
+  {
+    title: 'Ai-images',
+    description: 'A website to generate images with the help of ai',
+    link: 'https://aiimages.tk'
+  },
+  {
+    title: 'TimeCapsule',
+    description: 'A place where you can store you memories and revisite them whenever you wish',
+    link: 'https://timecapsule.jatinsharma24.repl.co'
+  },
+  {
+    title: 'Diwali-Diya',
+    description: 'A Replit Diwali Jam winner project.',
+    link: 'https://diwali.ml'
+  },
+  {
+    title: 'Yeti',
+    description: 'A Replit Halloween Jam winner.',
+    link: 'https://yeti.jatinsharma24.repl.co'
+  },
+
+
+  // Add more projects here
+];
+for (const project of projects) {
+  // Clone the project card template
+  const projectCard = projectCardTemplate.content.cloneNode(true);
+
+  // Set the project image
+/*  projectCard.querySelector('.project-image img').src = project.image;*/
+
+  // Set the project title
+  projectCard.querySelector('.project-title').textContent = project.title;
+
+  // Set the project description
+  projectCard.querySelector('.project-description').textContent = project.description;
+
+  // Set the project link
+  projectCard.querySelector('.project-link').href = project.link;
+  projectCardsContainer.appendChild(projectCard);
+      }
+        
+        
+    </script>

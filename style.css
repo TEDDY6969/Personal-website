@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background-color: pink;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+    
+}
+
+.nav-link:hover{
+    color: deeppink;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+  background-color: pink;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    padding: 1rem 1.5rem;
+}
+.hamburger {
+    display: none;
+    background-color: pink;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: pink;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+        background-color: pink;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+  .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+* {
+
+background-color: white;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.greet {
+  font-family: 'PT Sans', sans-serif;
+  text-align: left;
+  margin: 30rem 0rem 0rem 7rem;
+  font-size: 10rem;
+  position: relative;
+}
+
+
+.name {
+  color: pink;
+  font-family: 'Edu QLD Beginner', cursive;
+}
+.name:hover{
+  color: #d6bfff;
+  animation: animate 0.6s;
+}
+@keyframes animate {
+  25%{
+    transform: scale(0.8,1.3);
+  }
+  50%{
+    transform: scale(1.1,0.8);
+  }
+  75%{
+    transform: scale(0.7,1.2);
+  }
+}
+.footer-area { 
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.footer-area .social-media {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-area .social-media > a {
+	display: flex;
+	background: white;
+	height: 7.5rem;
+	width: 7.5rem;
+	margin: 0 1.5rem;
+	border-radius: .8rem;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	box-shadow: .6rem .6rem 1.0rem -.1rem rgba(0, 0, 0, 0.15), -.6rem -.6rem 1.0rem -.1rem rgba(255, 255, 255, 0.5);
+
+	border: 1rem solid rgba(0, 0, 0, 0);
+	transition: transform 0.5s;
+}
+
+.footer-area .social-media a i {
+	font-size: 3.5rem;
+	color: #eca7a6;
+	transition: transform 0.5s;
+}
+
+.footer-area .social-media > a:hover {
+	box-shadow: inset .4rem .4rem .6rem -.1rem rgba(0, 0, 0, 0.2), inset -.4rem -.4rem .6rem -.1rem rgba(255, 255, 255, 0.7),
+		-0.05rem -0.05rem 0rem -.1rem rgba(255, 255, 255, 1), 0.05rem 0.05rem 0rem rgba(0, 0, 0, 0.15),
+		0rem 1.2rem 1.0rem -1.0rem rgba(0, 0, 0, 0.05);
+
+	border: .1rem solid rgba(0, 0, 0, 0.01);
+	transform: translateY(.2rem);
+}
+
+.footer-area .social-media a:hover i {
+	transform: scale(0.90);
+}
+
+.footer-area .social-media a:hover .fa-instagram {
+	color: #f14843;
+}
+.footer-area .social-media a:hover .fa-patreon {
+	color: #ff0000;
+}
+.footer-area .social-media a:hover .fa-discord {
+	color: #5865F2;
+}
+.footer-area .social-media a:hover .fa-twitter {
+	color: #00acee;
+}
+.footer-area .social-media a:hover .fa-github {
+	color: #111;
+}
+.footer-area .social-media a:hover .fa-envelope {
+	color: #5c9aff;
+}
+
+
+@media (max-width: 1024px) {
+	html{
+		font-size: 55%;
+  }
+  .greet {
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+  a {
+    text-decoration: none;
+    background-color: pink;
+}
+	.skill {
+		padding-left: 2rem;
+    font-weight: 300;
+
+	}
+
+	.footer-area .social-media {
+		padding-top: 21rem;
+	}
+}
+@media (min-width: 1280px) and (min-height: 768px) {
+   a {
+    text-decoration: none;
+    background-color: pink;
+}
+}
+@media (max-width: 768px) {
+
+	html{
+		font-size: 70%;
+	}
+  .greet {
+    padding-left: 5rem
+  }
+	.skill {
+		padding-left: 4rem;
+    font-weight: 300;
+	}
+  a {
+    text-decoration: none;
+    background-color: pink;
+}
+
+	.footer-area .social-media {
+		padding-top: 4rem;
+	}
+}
+
+@media (max-width: 540px) {
+
+	html{
+		font-size: 45%;
+	}
+}
+
+@media (max-width: 450px) {
+
+	html{
+		font-size: 45%;
+	}
+	.footer-area .social-media {
+		padding-top: 9.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+	html{
+		font-size: 40%;
+	}
+	.footer-area .social-media {
+		padding-top: 14rem;
+	}
+}
+
+@media (max-width: 320px) {
+	html{
+		font-size: 40%;
+	}
+	.footer-area .social-media {
+		padding-top: 8.5rem;
+	}
+}
+@media (max-width: 280px) {
+	html{
+		font-size: 40%;
+	}
+    }

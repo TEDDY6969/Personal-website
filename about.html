@@ -1,0 +1,182 @@
+
+  <!-- About me card container -->
+<div class="about-me-card">
+  <!-- Profile picture -->
+  <div class="profile-picture">
+    <img src="https://avatars.githubusercontent.com/u/75193966?v=4" alt="Profile picture">
+  </div>
+  <!-- Name -->
+  <h2 class="name">Jatin</h2>
+  <!-- Occupation -->
+  <p id="occupation">Frontend Dev!</p>
+  <script src="js/typewriter.js"></script>
+  <!-- Country -->
+  <p class="country">India</p>
+  <!-- Experience -->
+  <p class="experience">2 years of experience</p>
+  <!-- Skills -->
+  <ul class="skills">
+  <!-- HTML skill -->
+  <li>
+    <i class="fas fa-code"></i> HTML
+  </li>
+  <!-- CSS skill -->
+  <li>
+    <i class="fas fa-code"></i> CSS
+  </li>
+  <!-- JavaScript skill -->
+  <li>
+    <i class="fas fa-code"></i> JavaScript
+  </li>
+    <li>
+    <i class="fas fa-code"></i> C#
+  </li>
+    <li>
+    <i class="fas fa-code"></i> Python 
+  </li>
+    
+<li>
+    <i class="fas fa-code"></i> EJS
+  </li>
+<li>
+    <i class="fas fa-code"></i> React.js
+  </li>
+    <li>
+    <i class="fas fa-code"></i> PHP
+  </li>
+<li>
+    <i class="fas fa-code"></i> Node.js
+  </li>
+<li>
+    <i class="fas fa-code"></i> Mongodb
+  </li>
+
+</ul>
+    </div>
+  <style>
+    body {
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+   .about-me-card {
+  background-color: #fff4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px;
+  width: 80vw;
+  margin: 12vw;
+}
+
+/* Profile picture */
+.profile-picture {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  animation: bounce 1s ease-in-out infinite alternate;
+}
+
+/* Profile picture image */
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Name */
+.name {
+  margin-bottom: 5px;
+  font-size: 3rem;
+
+}
+
+/* Occupation */
+#occupation {
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+/* Country */
+.country {
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+/* Experience */
+.experience {
+  color: #666666;
+  margin-bottom: 20px;
+}
+   .skills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background-color: #fff4f4;
+  border-radius: 10px;
+  color: #666666;
+  font-size: 12px;
+  margin: 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Skill icon */
+.skills li i {
+  color: #ffb3b3;
+  font-size: 0.9em;
+  margin-right: 5px;
+}
+
+/* Animation */
+@keyframes bounce {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+    </style>
+  <script src="script.js"></script>
+  <script>
+    const messages = [
+      "Frontend developer",
+      "student",
+      "Space enthusiast",
+      "Berozgar"
+    ];
+
+    // Set the initial index to 0
+    let index = 0;
+
+    // Set the interval to 1000 milliseconds (1 second)
+    const interval = 1000;
+
+    // Use setInterval to execute the updateText function every 1 second
+    setInterval(updateText, interval);
+
+    function updateText() {
+      const container = document.getElementById("occupation");
+
+      // Update the text of the container
+      container.innerHTML = messages[index];
+
+      // Increment the index
+      index++;
+
+      // If the index is greater than the length of the messages array, reset it to 0
+      if (index >= messages.length) {
+        index = 0;
+      }
+    }
+  </script>
